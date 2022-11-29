@@ -9,7 +9,10 @@
 spis = []
 n = int(input("Введите список чисел: "))
 a = 1
+sum = 0
 for i in range(1, n+1):
     a = (1 + 1/i)**i
+    sum+=a
     spis.append(round(a,3))
 print(spis)
+print(round(sum,3))
