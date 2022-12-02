@@ -21,18 +21,15 @@ def new_set(n):
 def mult_el(a):
     dop_sp = []
     pr = 0
-    if n%2!=0:
-        for i in range(0,n//2):
-            pr = a[i]*a[n-1-i]
-            dop_sp.append(pr)
-        dop_sp.append(a[i+1])    
-    else:
-        for i in range(0,n//2):
-            pr = a[i]*a[n-1-i]
-            dop_sp.append(pr)
-        
-    return dop_sp
-
+    for i in range(0,n//2):
+        pr = a[i]*a[n-1-i]
+        dop_sp.append(pr)
+    
+    if n%2 != 0:  
+        dop_sp.append(a[n//2])  
+   
+    return dop_sp   
+   
 n = int(input("Введите кол-во чисел в списке: "))
 a = new_set(n)
 print(a)
