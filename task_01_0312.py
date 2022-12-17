@@ -15,6 +15,3 @@ def accury_n(x, y):
 a = float(input("Введите действительное число: "))
 d = float(input("Введите требуемую точность в формате 0.0001: "))
 print(accury_n(a, d))
-
-#print(b)
-#print(accury_n(a, d))
